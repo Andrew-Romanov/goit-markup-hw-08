@@ -1,0 +1,36 @@
+// Постоянные клиенты
+.clients__list {
+  display: flex;
+}
+
+.clients__client:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients__client {
+  display: flex;
+
+  width: calc((100% - 150px) / 6);
+}
+
+.clients__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 90px;
+
+  fill: $clients-and-socials-color;
+  border: 1px solid $clients-and-socials-color;
+  border-radius: 4px;
+
+  transition: fill $timing $timing-function,
+    border $timing $timing-function;
+}
+
+.clients__link:hover,
+.clients__link:focus {
+  fill: $accent-color;
+  border: 1px solid $accent-color;
+}

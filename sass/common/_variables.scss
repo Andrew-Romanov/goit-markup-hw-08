@@ -1,0 +1,29 @@
+// Объявление цветов через SCSS переменные
+$primary-text-color: #212121;
+$secondary-text-color: #757575;
+$bottom-contacts-text-color: rgba(255, 255, 255, 0.6);
+$bottom-subscription-border-color: rgba(255, 255, 255, 0.3);
+$modal-form-fields-bordrer-color: rgba(33, 33, 33, 0.2);
+$accent-color: #2196F3;
+$accent-color-trasparent: #2196F399;
+$accent-color-trasparent-2: #2196F3E6;
+$hero-background-color: #C4C4C4;
+$hero-overlay-color: rgba(47, 48, 58, 0.4);
+$button-shadow-color: rgba(0, 0, 0, 0.15);
+$our-works-overlay-color: rgba(47, 48, 58, 0.8);
+$portfolio-stroke-color: #EEEEEE;
+$clients-and-socials-color: #AFB1B8;
+$main-light-color: #FFFFFF;
+$main-light-color-transparent: rgba(255, 255, 255, 0.1);
+$main-light-gray-color: #F5F4FA;
+$main-dark-gray-color: #2F303A;
+$main-black-color: #000000;
+$main-nav-stroke-color: #ECECEC;
+$backdrop-black-color: #00000033;
+$modal-close-button-border-color: #0000001A;
+$timing: 250ms;
+$timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+// Объявление шрифтов через SCSS переменные
+$logo-font: "Raleway";
+$text-font: "Roboto";

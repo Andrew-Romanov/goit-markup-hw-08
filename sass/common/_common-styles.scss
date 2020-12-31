@@ -1,0 +1,62 @@
+// Общая стилизация
+body {
+    color: $primary-text-color;
+    background-color: $main-light-color;
+    font-family: $text-font, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+  
+a {
+  text-decoration: none;
+}
+
+img, svg, a {
+  display: block;
+}
+
+h1, h2, h3, p {
+  padding: 0px;
+  margin: 0px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &__title {
+    margin-top: 0px;
+    margin-bottom: 50px;
+  
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+  }  
+
+  &--no-bottom-padding {
+    padding-bottom: 0px;
+  }
+}
+
+// Прячем заголовки
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+// Список без буллетов
+.list {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+

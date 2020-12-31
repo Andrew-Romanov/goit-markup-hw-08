@@ -1,0 +1,93 @@
+// Подключение шрифтов
+
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway Bold"),
+    local("Raleway-Bold"),
+    url("../fonts/Raleway-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src:  local("Roboto"),
+    local("Roboto-Regular"),
+    url("../fonts/Roboto-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src:  local("Roboto Medium"),
+    local("Roboto-Medium"),
+    url("../fonts/Roboto-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src:  local("Roboto Bold"),
+    local("Roboto-Bold"),
+    url("../fonts/Roboto-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src:  local("Roboto Black"),
+    local("Roboto-Black"),
+    url("../fonts/Roboto-Black.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+// @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
+
+// @font-face {
+//   font-family: "Raleway";
+//   src: local("Raleway Bold"),
+//     local("Raleway-Bold"),
+//     url("../../fonts/Raleway-Bold.ttf");
+//   font-weight: 700;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: "Roboto";
+//   src:  local("Roboto"),
+//     local("Roboto-Regular"),
+//     url("../../fonts/Roboto-Regular.ttf");
+//   font-weight: 400;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: "Roboto";
+//   src:  local("Roboto Medium"),
+//     local("Roboto-Medium"),
+//     url("../../fonts/Roboto-Medium.ttf");
+//   font-weight: 500;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: "Roboto";
+//   src:  local("Roboto Bold"),
+//     local("Roboto-Bold"),
+//     url("../../fonts/Roboto-Bold.ttf");
+//   font-weight: 700;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: "Roboto";
+//   src:  local("Roboto Black"),
+//     local("Roboto-Black"),
+//     url("../../fonts/Roboto-Black.ttf");
+//   font-weight: 700;
+//   font-style: normal;
+// }

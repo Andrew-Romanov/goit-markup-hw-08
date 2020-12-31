@@ -1,0 +1,47 @@
+// Подключение Modern Normilize
+@import "./utils/modern-normalize";
+
+// Подключение шрифтов
+@import "./common/fonts";
+
+// Подключение переменных
+@import "./common/variables";
+
+// Общая стилизация
+@import "./common/common-styles";
+
+// Контейнеры
+@import "./components/containers";
+
+// Логотипы
+@import "./components/logos";
+
+// Кнопки
+@import "./components/buttons";
+
+// Заголовок страницы с меню навигации
+@import "./components/header";
+
+// Герой
+@import "./components/hero";
+
+// Особенности и преимущества
+@import "./components/features";
+
+// Чем мы занимаемся
+@import "./components/our-works";
+
+// Наша команда
+@import "./components/team";
+
+// Постоянные клиенты
+@import "./components/clients";
+
+// Подвал
+@import "./components/footer";
+
+// Модальное окно
+@import "./components/modal";
+
+// Портфолио
+@import "./components/portfolio";

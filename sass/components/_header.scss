@@ -1,0 +1,104 @@
+// Заголовок страницы с меню навигации
+.page-header {
+  border-bottom: 1px solid $main-nav-stroke-color;
+}
+
+.site-nav {
+  display: flex;
+  margin-right: auto;
+
+  &__logo {
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+
+  &__links {
+    display: flex;
+  }
+  
+  &__link {
+    display: block;
+    position: relative;
+  
+    padding-top: 32px;
+    padding-bottom: 32px;
+  
+    color: $primary-text-color;
+  
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  
+    transition: color $timing $timing-function;
+  }
+  
+  &__link:hover,
+  &__link:focus,
+  &__link.current {
+    color: $accent-color;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  &__link.current:hover,
+  &__link.current:focus {
+    color: $primary-text-color;
+  }
+
+  &__link.current::after {
+    content: "";
+    display: block;
+    position: absolute;
+
+    bottom: -1px;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+
+    background-color: $accent-color;
+
+    transition: background-color $timing $timing-function;
+  }
+
+  &__link.current:hover::after {
+    background-color: $primary-text-color;
+  }
+}
+
+.contacts-top {
+  display: flex;
+
+  &__link {
+    display: flex;
+    align-items: center;
+  
+    padding-top: 32px;
+    padding-bottom: 32px;
+  
+    color: $secondary-text-color;
+  
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  
+    transition: color $timing $timing-function;
+  }
+  
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
+  
+  &__link:hover,
+  &__link:focus {
+    color: $accent-color;
+  }
+  
+  &__icon {
+    margin-right: 10px;
+  
+    fill: currentColor;
+  }
+}

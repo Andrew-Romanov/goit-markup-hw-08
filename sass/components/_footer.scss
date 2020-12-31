@@ -1,0 +1,108 @@
+// Подвал
+.footer {
+  background-color: $main-dark-gray-color;
+
+  &__info {
+    margin-right: 86px;
+  }
+  
+  &__logo {
+    margin-top: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  &__address {
+    color: $main-light-color;
+    font-style: normal;
+  }
+
+  &__contacts-item {
+    margin-top: 9px;
+  }
+
+  &__contacts-link {
+    color: $bottom-contacts-text-color;
+  
+    transition: color $timing $timing-function;
+  }
+
+  &__contacts-link:hover,
+  &__contacts-link:focus {
+    color: $accent-color-trasparent;
+  }
+
+  &__socials {
+    margin-right: auto;
+  }
+  
+  &__socials-list {
+    display: flex;
+  }
+  
+  &__socials-item:not(:last-child) {
+    margin-right: 10px;
+  }
+  
+  &__socials-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+  
+    fill: $main-light-color;
+    background-color: $main-light-color-transparent;
+  
+    transition: background-color $timing $timing-function;
+  }
+  
+  &__socials-link:hover, 
+  &__socials-link:focus {
+    background-color: $accent-color;
+  }
+  
+  &__socials-header,
+  &__subscription-header {
+    margin-bottom: 20px;
+  
+    color: $main-light-color;
+  
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  &__subscription-form {
+    display: flex;
+  }
+
+  &__subscription-input {
+    width: 358px;
+    height: 50px;
+    margin-right: 12px;
+    padding: 15px 16px;
+
+    font-size: 16px;
+    line-height: 1.25;
+
+    color: $bottom-contacts-text-color;
+    background-color: transparent;
+    border: 1px solid $bottom-subscription-border-color;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px $button-shadow-color;
+
+    transition: color $timing $timing-function,
+      border $timing $timing-function;
+  }
+
+  &__subscription-input:hover,
+  &__subscription-input:focus {
+    color: $main-light-color;
+    border: 1px solid $accent-color;
+  }
+}

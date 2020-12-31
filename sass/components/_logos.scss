@@ -1,0 +1,43 @@
+// Логотипы
+.logo {
+  display: block;
+  font-family: $logo-font, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  &__web {
+    color: $accent-color;
+  
+    transition: color $timing $timing-function;
+  }
+
+  &:hover &__web--on-light,
+  &:focus &__web--on-light {
+    color: $main-black-color;
+  }
+
+  &:hover &__web--on-dark,
+  &:focus &__web--on-dark {
+    color: $main-light-color;
+  }
+
+  &__studio {
+    transition: color $timing $timing-function;
+  }
+
+  &__studio--on-light {
+    color: $main-black-color;
+  }
+
+  &__studio--on-dark {
+    color: $main-light-color;
+  }
+
+  &:hover &__studio--on-light,
+  &:focus &__studio--on-light,
+  &:hover &__studio--on-dark,
+  &:focus &__studio--on-dark {
+    color: $accent-color;
+  }
+}

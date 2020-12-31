@@ -1,0 +1,38 @@
+// Особенности и преимущества
+.features {
+  display: flex;
+
+  &__item {
+    width: calc((100% - 90px) / 4);
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    height: 120px;
+    margin-bottom: 30px;
+  
+    background-color: $main-light-gray-color;
+  }
+
+  &__name {
+    margin-top: 0px;
+    margin-bottom: 10px;
+  
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+
+  &__explanation {
+    color: $secondary-text-color;
+  
+    margin-top: 0px;
+  }
+}

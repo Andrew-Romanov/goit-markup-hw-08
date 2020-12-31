@@ -1,0 +1,25 @@
+// Контейнеры
+.container {
+  width: 1200px;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  /* Фон для тестирования размеров контейнера */
+  /* background-color: wheat; */
+
+  &--main-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &--bottom-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    height: 252px;
+  }
+}
