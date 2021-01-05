@@ -1,14 +1,14 @@
 // Особенности и преимущества
 .features {
-  display: flex;
+  margin: -15px;
 
   &__item {
-    width: calc((100% - 90px) / 4);
+    margin: 15px;
   }
 
-  &__item:not(:last-child) {
-    margin-right: 30px;
-  }
+  // &__item:not(:last-child) {
+  //   margin-bottom: 30px;
+  // }
 
   &__picture {
     display: flex;
@@ -35,4 +35,35 @@
   
     margin-top: 0px;
   }
+
+  @media screen and (min-width: $phone-width) {
+    &__item {
+      width: $phone-width - 30px;
+    }
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &__item {
+      width: calc((100% - 60px) / 2);
+    }
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    flex-wrap: nowrap;
+
+    &__item {
+      width: calc((100% - 90px) / 4);
+    }
+
+    // &__item:not(:last-child) {
+    //   margin-right: 30px;
+    // }
+  
+  
+  }
+
 }

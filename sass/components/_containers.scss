@@ -1,7 +1,5 @@
 // Контейнеры
 .container {
-  width: 1200px;
-
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -22,4 +20,17 @@
     align-items: baseline;
     height: 252px;
   }
+
+  @media screen and (min-width: $phone-width) {
+    width: $phone-width;
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
+
 }

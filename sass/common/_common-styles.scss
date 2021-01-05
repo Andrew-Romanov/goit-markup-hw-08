@@ -7,8 +7,20 @@ body {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+
+    @media screen and (min-width: $phone-width) {
+      background-color: lightsalmon;
+    }
+
+    @media screen and (min-width: $tablet-width) {
+      background-color: lightgreen;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      background-color: lightcoral;
+    }
   }
-  
+
 a {
   text-decoration: none;
 }
@@ -23,21 +35,54 @@ h1, h2, h3, p {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   &__title {
     margin-top: 0px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.17;
     text-align: center;
-  }  
 
-  &--no-bottom-padding {
-    padding-bottom: 0px;
+    // @media screen and (min-width: $phone-width) {
+      
+    // }
+
+    // @media screen and (min-width: $tablet-width) {
+      
+    // }
+
+    @media screen and (min-width: $desktop-width) {
+      margin-bottom: 50px;
+      font-size: 36px;
+    }
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  &--features {
+    @media screen and (min-width: $desktop-width) {
+      padding-bottom: 0px;
+    }
+  }
+
+  &--our-works {
+    display: none;
+
+    @media screen and (min-width: $desktop-width) {
+      display: block;
+    }
   }
 }
 
@@ -59,4 +104,3 @@ h1, h2, h3, p {
   margin: 0px;
   list-style: none;
 }
-

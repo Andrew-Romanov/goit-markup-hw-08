@@ -1,6 +1,7 @@
 // Чем мы занимаемся
 .our-works {
   display: flex;
+  justify-content: space-between;
 
   &__item {
     position: relative;
@@ -27,7 +28,7 @@
     color: $main-light-color;
   }
 
-  &__item:not(:last-child) {
-    margin-right: 30px;
-  }
+  // &__item:not(:last-child) {
+  //   margin-right: 30px;
+  // }
 }

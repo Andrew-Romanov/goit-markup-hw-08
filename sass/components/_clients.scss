@@ -1,11 +1,12 @@
 // Постоянные клиенты
 .clients__list {
   display: flex;
+  justify-content: space-between;
 }
 
-.clients__client:not(:last-child) {
-  margin-right: 30px;
-}
+// .clients__client:not(:last-child) {
+//   margin-right: 30px;
+// }
 
 .clients__client {
   display: flex;

@@ -27,3 +27,8 @@ $timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 // Объявление шрифтов через SCSS переменные
 $logo-font: "Raleway";
 $text-font: "Roboto";
+
+// Объявление точек перелома через SCSS переменные
+$phone-width: 480px;
+$tablet-width: 768px;
+$desktop-width: 1200px;
