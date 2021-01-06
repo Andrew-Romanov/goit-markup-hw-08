@@ -2,8 +2,35 @@
 .footer {
   background-color: $main-dark-gray-color;
 
+  &__info-socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: $tablet-width) {
+      // width: 450px;
+      flex-direction: row;
+      align-items: baseline;
+      justify-content: center;
+    }
+  }
+
   &__info {
-    margin-right: 86px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+    margin-right: 0px;
+
+    @media screen and (min-width: $tablet-width) {
+      margin-right: 174px;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      align-items: flex-start;
+      margin-right: 86px;
+      margin-bottom: 0px;
+    }
   }
   
   &__logo {
@@ -33,7 +60,15 @@
   }
 
   &__socials {
-    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+
+    @media screen and (min-width: $desktop-width) {
+      align-items: flex-start;
+      margin-bottom: 0px;
+    }
   }
   
   &__socials-list {
@@ -77,14 +112,38 @@
     text-transform: uppercase;
   }
 
+  &__subscription {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: $desktop-width) {
+      align-items: flex-start;
+    }
+  }
+
   &__subscription-form {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    @media screen and (min-width: $tablet-width) {
+      width: 450px;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      flex-direction: row;
+      width: 570px;
+    }
   }
 
   &__subscription-input {
-    width: 358px;
+    // width: 450px;
+    width: 100%;
     height: 50px;
-    margin-right: 12px;
+    margin-right: 0px;
+    margin-bottom: 20px;
     padding: 15px 16px;
 
     font-size: 16px;
@@ -98,6 +157,12 @@
 
     transition: color $timing $timing-function,
       border $timing $timing-function;
+
+    @media screen and (min-width: $desktop-width) {
+      width: 358px;
+      margin-right: 12px;
+      margin-bottom: 0px;
+    }
   }
 
   &__subscription-input:hover,
