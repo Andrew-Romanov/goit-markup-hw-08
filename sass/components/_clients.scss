@@ -2,16 +2,26 @@
 .clients__list {
   display: flex;
   justify-content: space-between;
-}
+  flex-wrap: wrap;
+  margin: -15px;
 
-// .clients__client:not(:last-child) {
-//   margin-right: 30px;
-// }
+  @media screen and (min-width: $desktop-width) {
+    flex-wrap: nowrap;
+  }
+}
 
 .clients__client {
   display: flex;
+  margin: 15px;
+  width: calc((100% - 60px) / 2);
 
-  width: calc((100% - 150px) / 6);
+  @media screen and (min-width: $tablet-width) {
+    width: calc((100% - 90px) / 3);
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    width: calc((100% - 180px) / 6);
+  }
 }
 
 .clients__link {
