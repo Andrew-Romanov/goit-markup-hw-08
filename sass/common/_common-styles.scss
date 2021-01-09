@@ -8,6 +8,10 @@ body {
     line-height: 1.71;
     letter-spacing: 0.03em;
 
+    &.modal-open {
+      overflow: hidden;
+    }
+
     @media screen and (min-width: $phone-width) {
       background-color: lightsalmon;
     }

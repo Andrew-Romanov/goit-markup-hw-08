@@ -1,11 +1,68 @@
 // Заголовок страницы с меню навигации
 .page-header {
+  position: relative;
   border-bottom: 1px solid $main-nav-stroke-color;
 }
 
 .site-nav {
   display: flex;
   margin-right: auto;
+
+  &__menu-button {
+    // display: inline-flex;
+    // justify-content: center;
+    // align-items: center;
+
+    // width: 40px;
+    // height: 40px;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  &__menu-open {
+    display: block;
+    fill: $primary-text-color;
+    transition: fill $timing $timing-function;
+  }
+
+  &__menu-close {
+    display: none;
+    fill: $primary-text-color;
+    transition: fill $timing $timing-function;
+  }
+
+  &__menu-button.is-open &__menu-close {
+    display: block;
+  }
+
+  &__menu-button.is-open &__menu-open {
+    display: none;
+  }
+
+  &__menu-button:hover &__menu-open,
+  &__menu-button:focus &__menu-open,
+  &__menu-button:hover &__menu-close,
+  &__menu-button:focus &__menu-close {
+    fill: $accent-color;
+  }
+
+  &__menu-container {
+    display: none;
+    position: absolute;
+    top: calc(100% + 1px);
+    left: 0%;
+    width: 100%;
+    height: 392px;
+
+    background-color: $main-light-color;
+  }
+
+  &__menu-container.is-open {
+    display: block;
+  }
 
   &__logo {
     margin-right: 93px;

@@ -1,10 +1,10 @@
 // Герой
 .hero {
   max-width: 1600px;
-  height: 600px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
+  padding-top: 118px;
 
   background-color: $hero-background-color;
   background-image: linear-gradient($hero-overlay-color, $hero-overlay-color),
@@ -15,16 +15,25 @@
 
   text-align: center;
 
+  @media screen and (min-width: $desktop-width) {
+    height: 600px;
+    padding-top: 200px;
+  }
+
   &__title {
     color: $main-light-color;
-  
+
     margin-top: 0px;
     margin-bottom: 30px;
   
     font-weight: 900;
-    font-size: 44px;
+    font-size: 26px;
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    @media screen and (min-width: $desktop-width) {
+      font-size: 44px;
+    }
   }
 }
