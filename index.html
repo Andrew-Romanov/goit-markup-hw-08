@@ -15,51 +15,55 @@
   <header class="page-header">
 
     <div class="container container--main-nav">
-      <nav class="site-nav">
-        <a class="logo site-nav__logo" href="./index.html">
-          <span class="logo__web logo__web--on-light">Web</span><span class="logo__studio logo__studio--on-light">Studio</span>
-        </a>
 
-        <ul class="site-nav__links list">
-          <li class="site-nav__item"><a class="site-nav__link current" href="./index.html">Студия</a></li>
-          <li class="site-nav__item"><a class="site-nav__link" href="./portfolio.html">Портфолио</a></li>
-          <li class="site-nav__item"><a class="site-nav__link" href="">Контакты</a></li>
-        </ul>
+      <a class="logo site-nav__logo" href="./index.html">
+        <span class="logo__web logo__web--on-light">Web</span><span class="logo__studio logo__studio--on-light">Studio</span>
+      </a>
 
-        <button class="site-nav__menu-button" type="button" data-menu-button 
-        aria-expanded="false"
-        aria-controls="site-nav__menu-container">
-          <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-            <use class="site-nav__menu-open" href="./images/sprite.svg#icon-menu-open"></use>
-            <use class="site-nav__menu-close" href="./images/sprite.svg#icon-menu-close"></use>
-            <!-- <use href="./images/sprite.svg#icon-menu-open" width="24" height="16"></use>
-            <use href="./images/sprite.svg#icon-menu-close" width="19" height="19"></use> -->
-          </svg>
-        </button>
+      <div class="site-nav__menu-container" data-menu id="site-nav__menu-container">
 
-        <div class="site-nav__menu-container" data-menu id="site-nav__menu-container">
+        <nav class="site-nav">
+          <!-- <a class="logo site-nav__logo" href="./index.html"> -->
+            <!-- <span class="logo__web logo__web--on-light">Web</span><span class="logo__studio logo__studio--on-light">Studio</span> -->
+          <!-- </a> -->
 
-        </div>
-      </nav>
+          <ul class="site-nav__links list">
+            <li class="site-nav__item"><a class="site-nav__link current" href="./index.html">Студия</a></li>
+            <li class="site-nav__item"><a class="site-nav__link" href="./portfolio.html">Портфолио</a></li>
+            <li class="site-nav__item"><a class="site-nav__link" href="">Контакты</a></li>
+          </ul>
 
-      <ul class="contacts-top list">
-        <li class="contacts-top__item">
-          <a class="contacts-top__link" href="mailto:info@devstudio.com">
-            <svg class="contacts-top__icon" width="16" height="12">
-              <use href="./images/sprite.svg#icon-envelope"></use>
-            </svg>
-            info@devstudio.com
-          </a>
-        </li>
-        <li class="contacts-top__item">
-          <a class="contacts-top__link" href="tel:+380961111111">
-            <svg class="contacts-top__icon" width="10" height="16">
-              <use href="./images/sprite.svg#icon-phone"></use>
-            </svg>
-            +38 096 111 11 11
-          </a>
-        </li>
-      </ul>
+          <ul class="contacts-top list">
+            <li class="contacts-top__item">
+              <a class="contacts-top__link" href="mailto:info@devstudio.com">
+                <svg class="contacts-top__envelope-icon">
+                  <use href="./images/sprite.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="contacts-top__item">
+              <a class="contacts-top__link" href="tel:+380961111111">
+                <svg class="contacts-top__phone-icon">
+                  <use href="./images/sprite.svg#icon-phone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+
+      <button class="site-nav__menu-button" type="button" data-menu-button 
+      aria-expanded="false"
+      aria-controls="site-nav__menu-container">
+        <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+          <use class="site-nav__menu-open" href="./images/sprite.svg#icon-menu-open"></use>
+          <use class="site-nav__menu-close" href="./images/sprite.svg#icon-menu-close"></use>
+        </svg>
+      </button>
+
     </div>
   </header>
 
