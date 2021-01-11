@@ -30,8 +30,14 @@ a {
   text-decoration: none;
 }
 
-img, svg, a {
+svg, a {
   display: block;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 h1, h2, h3, p {
