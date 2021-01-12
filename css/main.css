@@ -301,7 +301,7 @@ summary {
 @font-face {
   font-family: "Roboto";
   src: local("Roboto Black"), local("Roboto-Black"), url("../fonts/Roboto-Black.ttf");
-  font-weight: 700;
+  font-weight: 900;
   font-style: normal;
 }
 
@@ -1036,6 +1036,13 @@ h1, h2, h3, p {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .features__name {
+    text-align: left;
+  }
 }
 
 .features__explanation {
