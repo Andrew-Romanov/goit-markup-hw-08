@@ -659,6 +659,7 @@ h1, h2, h3, p {
 @media screen and (min-width: 768px) {
   .site-nav__menu-container {
     position: static;
+    z-index: 0;
     display: block;
     height: 80px;
     padding-top: 0px;
