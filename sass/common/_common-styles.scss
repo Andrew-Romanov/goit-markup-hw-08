@@ -8,9 +8,11 @@ body {
     line-height: 1.71;
     letter-spacing: 0.03em;
 
-    &.modal-open {
-      overflow: hidden;
-    }
+    // Можно влючить в modal.js соответствующую строку, но тогда выключится скролл
+    // и body скакнёт вправо
+    // &.modal-open {
+    //   overflow: hidden;
+    // }
 
     // Смена цвета фона при изменениии ширины вьюпорта
     // @media screen and (min-width: $phone-width) {
